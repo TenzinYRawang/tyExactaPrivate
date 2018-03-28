@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+</head>
+<body>
+<!-- HEADER
+=============================================================== -->
+<header>
+  <div class="navbar-wrapper">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--TODO have to put company logo there  -->
+          <!-- <a class="navbar-brand" href="/"><img src="assets/img/exactaLogo.png" alt="ExactaLogo"></a> -->
+
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Wash Sites</a></li>
+            <!-- <li><a href="washSites.html">Customer Accounts</a></li> -->
+            <li><a href="fleetAccounts.html">Fleet Accounts</a></li>
+            <!-- <li><a href="createAccount.html">Create Account</a></li> -->
+            <li class="search"> <input class="form-control" type="search" name="search" placeholder="Search"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--Google Map
+=======================================  -->
+<section class="googleMap">
+<h3>My Google Maps Demo</h3>
+
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:13,
+        center:{lat:51.08,lng:-114.0914}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:51.0759,lng:-114.0914},
+          // iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Barlow Car Wash</h1>'
+        },
+        {
+          coords:{lat:51.0779,lng:-114.0934},
+          content:'<h1>Larry Car Wash</h1>'
+        },
+        {
+          coords:{lat:51.0709,lng:-114.0814},
+          content: '<h1>Dillion Car Wash</h2>'
+        }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?=AIzaSyBlCwUzlitEtstFRmpijQhPgd6jjmblgGg&callback=initMap">
+    </script>
+</section>
+
+<!-- SECTION washSites
+======================================================================== -->
+<section class="washSites">
+  <div class="container">
+    <h1 style="text-align: center">WashSites</h1>
+    <table  class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Wash Sites</th>
+        <th scope="col">Location</th>
+        <th scope="col">Type/Description</th>
+        <th scope="col">Bay Count</th>
+        <th scope="col">Open/Closed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><a href="washSites.html">Barlow</td>
+        <td>4591 25 St SE</td>
+        <td>Self Serve</td>
+        <td>6</td>
+        <td style="color: Green">Open</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Barlow Bubble Wash</td> <td>4591 25 St SE</td> <td>Self Serve</td> <td>6</td> <td style="color: Green">Open</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<!-- FOOTER
+================================================== -->
+<!--Footer-->
+<!--FOOTER -->
+<footer>
+  <div class="container">
+    <div class="col-sm-3">
+      <!-- <p><a href="/"><img src=""
+        alt="Comany img"</a></p> -->
+    </div> <!-- end col -->
+    <div class="col-sm-6">
+      <nav>
+        <ul class="list-unstyled list-inline">
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="signup-link"><a href="">Sign up now</a></li>
+        </ul>
+
+      </nav>
+    </div> <!-- end col -->
+    <div class="col-sm-3">
+      <p class="pull-right">&copy; 2018 Exacta</p>
+    </div> <!-- end col -->
+  </div> <!-- end div -->
+</footer>
+  <!-- End of FOOTER -->
+
+<!--/.Footer-->
+</body>
+</html>

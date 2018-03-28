@@ -1,0 +1,31 @@
+a:link   {color:#red; text-decoration:none;}
+a:visited{color:#red; text-decoration:none;}
+a:hover  {color:black; text-decoration:underline;}
+a:active {color:black; text-decoration:underline;}
+ul.topnav 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color: #333;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a 
+{
+  display: block;
+  color: #f5f5ad;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 12px;
+}
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li {float: left;}
+@media screen and (max-width:480px) 
+{
+    ul.topnav li {float: none;}
+}
+
+

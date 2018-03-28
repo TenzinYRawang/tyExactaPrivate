@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <div id="editclient">
+        <h2>Edit Client</h2>
+        <form action="editclient" method="post" id="editclientform">
+            <input type="text" name="id" id="editid" hidden="1">
+            Client Name:<input type="text" name="name" id="editname"><br/>
+            Client CSS:<input type="text" name="css" id="editcss"><br/>
+            Client Logo:<input type="text" name="logo" id="editlogo"><br/>
+            Client Email:<input type="text" name="email" id="editemail"><br/>
+            Client Url:<input type="text" name="url" id="editurl"><br/>
+            Client Phone Number:<input type="text" name="phonenumber" id="editphonenumber"><br/>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</root>

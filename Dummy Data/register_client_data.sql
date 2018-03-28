@@ -1,0 +1,15 @@
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://example.com','Darelle','dheckner0@hao123.com','156-560-0325');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://sfgate.com','Anselma','acoules1@vinaora.com','630-352-2279');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://jalbum.net','Bianka','bboldison2@constantcontact.com','628-609-4062');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://mozilla.com','Teressa','tmoxstead3@dyndns.org','185-927-0903');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://washington.edu','Orton','olabatie4@sakura.ne.jp','471-594-4342');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://tumblr.com','Mar','mbenzi5@wsj.com','320-899-9653');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://digg.com','Gavan','gtomasi6@dot.gov','262-984-0738');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://com.com','Wylma','wgiamo7@washingtonpost.com','266-608-6087');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://nps.gov','Codi','cfairbairn8@google.co.uk','277-750-0765');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://google.com.au','Theresita','tmarples9@theglobeandmail.com','469-589-8237');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://sakura.ne.jp','Mycah','mstirleya@baidu.com','750-604-2743');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://wix.com','Zackariah','zcahanb@constantcontact.com','475-149-4026');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://free.fr','Kermie','kspikeingsc@blogger.com','222-252-8256');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('https://nifty.com','Sherrie','sjeffryesd@tripod.com','136-261-3009');
+INSERT INTO client_register(urlRegister,nameRegister,emailRegister,phoneNumberRegister) VALUES ('http://last.fm','Tillie','tlopese@nymag.com','840-209-2718');

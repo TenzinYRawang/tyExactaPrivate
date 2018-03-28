@@ -1,0 +1,5 @@
+package problemDomain;
+
+class Site {
+    
+}

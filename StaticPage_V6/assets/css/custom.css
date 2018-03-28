@@ -1,0 +1,135 @@
+body {
+		/* background: url('../img/tile.jpg') top left repeat; */
+
+}
+.search {
+  padding-top: 10px;
+}
+
+.exactaLogo {
+  max-width: 10%;
+  max-height: 10%;
+}
+.navbar-brand {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.washSites
+{
+  padding-top: 50px;
+  /* background-color: grey; */
+  /* max-width: 80px; */
+}
+
+
+
+
+.table {
+  max-width: 80%;
+  margin-left: AUTO;
+  margin-right: AUTO;
+
+}
+
+.graphs  {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.googleMap {
+  padding-top: 80px;
+  padding-bottom: 25px;
+  padding-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#map {
+  height: 300px;
+  width: 80%;
+}
+
+
+.loginFields {
+  max-width: 350px !important;
+	margin: auto;
+}
+.loginSection {
+	margin: auto;
+	width: 350px;
+}
+.table
+{
+  padding-right: 100px;
+}
+
+.miniMenu {
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+.miniMenu a:link {
+color: Black;
+text-decoration: none;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 15px;
+
+}
+
+.sidebar li {
+  text-align: center;
+  width: 18%;
+  margin-bottom: 3px !important;
+  /* background-color: #fff; */
+  /* border: 1px solid #eee; */
+  display: inline-block;
+}
+
+.sidebar i {
+  display: block;
+  font-size: 40px;
+  color: black;
+}
+
+.sidebar a:hover {
+  color: gold;
+}
+
+
+
+footer {
+  background-color: black;
+  background: #3e4249;
+  color: white;
+  padding: 20px 0 10px;
+  font-size: 12 px;
+  margin-top: 150px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:link, footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: #dd5638;
+}
+
+footer li.signup-link a {
+  color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+  font-weight: bold;

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;
+  charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="icon" href="assets/img/exactaLogo.png">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <!--FONT AWESOME ICONS-->
+  <!-- <link href="assets/css/fontawesome/css/fontawesome.min.css" rel="stylesheet"> -->
+   <script src="https://use.fontawesome.com/16cb25d3d6.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+</head>
+<body>
+<!-- HEADER
+=============================================================== -->
+<header>
+  <div class="navbar-wrapper">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--TODO have to put company logo there  -->
+          <!-- <a class="navbar-brand" href="/"><img src="assets/img/exactaLogo.png" alt="ExactaLogo"></a> -->
+
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Wash Sites</a></li>
+            <li><a href="fleetAccounts.html">Fleet Accounts</a></li>
+            <li class="search"> <input class="form-control" type="search" name="search" placeholder="Search"></li>
+            <li><a href="signUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- mini Menu BAR  --> -->
+<section class="miniMenu ">
+  <div class="sidebar breadcrumb">
+    <ul>
+      <li>
+      <a href="URL-HERE" title="Dashboard" ><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+
+      <li><a href="URL-HERE" title="Promotion" ><i class="fa fa-product-hunt "></i><span>Promotion</span></a>
+      </li>
+
+      <li><a href="URL-HERE" title="Manager" ><i class="fa fa-user"></i><span>Manage</span></a>
+      </li>
+
+      <li><a href="URL-HERE" title="Bay Selection"><i class="fa fa-check"></i><span>Bay Selection</span></a>
+      </li>
+
+      <li>  <a href="URL-HERE" title="Time Selection"><i class="fa fa-calendar"></i><span>Time Selection</span></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- sidebar -->
+
+
+
+<section class="washSites">
+    <h1 style="text-align: center">Barlow Bubble Wash</h1>
+
+  <div class="container">
+    <table  class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Total Revenue</th>
+        <th scope="col">Vehicle Count</th>
+        <th scope="col">Open/Closed</th>
+        <th scope="col">Bays Active</th>
+        <th scope="col">Location</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>$347.98</td>
+        <td>23</td>
+        <td style="color:green">Open</td>
+        <td>4</td>
+        <td>3</td>
+        <td>4591 25 St SE</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+</section>
+
+
+<section class="graphs">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <!-- <h2>Vehicle Count Per Hour</h2> -->
+      <!-- <img src="assets/img/graph1.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> -->
+      <canvas id="revenueGraph"></canvas>
+
+    </div> <!-- col -->
+      <div class="col-sm-5">
+        <!-- <h2>Total Revenue Per Hour</h2> -->
+        <!-- <img src="assets/img/graph2.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> -->
+        <canvas id="vehicleGraph"></canvas>
+
+      </div>  <!-- col -->
+      <div class="col-sm-2">
+        <table  class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Bay Number</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td  style="color:green">Open</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div><!--col  -->
+
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div>
+</section>
+
+<!--FOOTER -->
+<footer>
+  <div class="container">
+    <div class="col-sm-3">
+      <!-- <p><a href="/"><img src=""
+        alt="Comany img"</a></p> -->
+    </div> <!-- end col -->
+    <div class="col-sm-6">
+      <nav>
+        <ul class="list-unstyled list-inline">
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="signup-link"><a href="">Sign up now</a></li>
+        </ul>
+
+      </nav>
+    </div> <!-- end col -->
+    <div class="col-sm-3">
+      <p class="pull-right">&copy; 2018 Exacta</p>
+    </div> <!-- end col -->
+  </div> <!-- end div -->
+</footer>
+  <!-- End of FOOTER -->
+
+  <!--JAVASCRIPT  -->
+  <script type="text/javascript">
+
+  var rChart = document.getElementById("revenueGraph").getContext('2d');
+  var vChart = document.getElementById("vehicleGraph").getContext('2d');
+
+    Chart.defaults.global.defaultFontFamily ='Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+  var vGraph = new Chart(vChart, {
+    type:'bar', //bar, horizontalBar, pie, line, dougnut, radar, polarArea
+    data:{
+
+      labels:['8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 AM', '1:00 PM',
+              '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'],
+      datasets:[{
+        label: 'Population',
+        data:[
+            3,
+            5,
+            2,
+            6,
+            1,
+            3,
+            12,
+            2,
+            12,
+            20,
+            2
+        ],
+        //backgroundColor: 'green'
+        backgroundColor:[
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(54, 162, 132, 0.6)',
+          'rgba(255, 206, 132, 0.6)',
+          'rgba(75, 192, 132, 0.6)',
+          'rgba(153, 102, 132, 0.6)',
+          'rgba(255, 159, 132, 0.6)',
+        ],
+        borderWidth:1,
+        borderColor:'#777',
+        hoverBorderWidth:'3',
+        hoverBorderColor:'#000'
+      }]
+    }, //data is an object
+    options:{
+      title:{
+        display:true,
+        text:'Vechile Count Per Hour',
+        fontSize:25
+      },
+      legend:{
+        display: false,
+        position:'right',
+        labels:{
+          fontColor:'#000'
+        }
+      },
+      layout:{
+        padding:{
+          left:0,
+          right:0,
+          bottom:0,
+          top:0
+        }
+      },
+      tooltips:{
+        enabled:false
+      }
+    }
+  });
+
+
+
+
+
+   let rGraph = new Chart(rChart, {
+     type:'line', //bar, horizontalBar, pie, line, dougnut, radar, polarArea
+     data:{
+       labels:['8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 AM', '1:00 PM',
+               '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'],
+       datasets:[{
+         label: 'Population',
+         data:[
+             20,
+             33,
+             49,
+             300,
+             456,
+             1000,
+             1002,
+             1100,
+             1153,
+             1250,
+             2000
+         ],
+         //backgroundColor: 'green'
+         backgroundColor:[
+           'rgba(255, 99, 132, 0.6)',
+           'rgba(54, 162, 132, 0.6)',
+           'rgba(255, 206, 132, 0.6)',
+           'rgba(75, 192, 132, 0.6)',
+           'rgba(153, 102, 132, 0.6)',
+           'rgba(255, 159, 132, 0.6)',
+         ],
+         borderWidth:1,
+         borderColor:'#777',
+         hoverBorderWidth:'3',
+         hoverBorderColor:'#000'
+       }]
+     }, //data is an object
+     options:{
+       title:{
+         display:true,
+         text:'Total Revenue Per Hour',
+         fontSize:25
+       },
+       legend:{
+         display: false,
+         position:'right',
+         labels:{
+           fontColor:'#000'
+         }
+       },
+       layout:{
+         padding:{
+           left:0,
+           right:0,
+           bottom:0,
+           top:0
+         }
+       },
+       tooltips:{
+         // enabled:false
+       }
+     }
+   });
+  </script>
+</body>
+</html>

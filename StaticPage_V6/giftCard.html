@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- HEADER
+=============================================================== -->
+<header>
+  <div class="navbar-wrapper">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!--TODO have to put company logo there  -->
+          <!-- <a class="navbar-brand" href="/"><img src="assets/img/exactaLogo.png" alt="ExactaLogo"></a> -->
+
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/">Wash Sites</a></li>
+            <!-- <li><a href="washSites.html">Customer Accounts</a></li> -->
+            <li><a href="fleetAccounts.html">Fleet Accounts</a></li>
+            <!-- <li><a href="createAccount.html">Create Account</a></li> -->
+            <li class="search"> <input class="form-control" type="search" name="search" placeholder="Search"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="washSites">
+  <div class="container">
+    <h1 style="text-align: center">Barlow Bubble Wash</h1>
+
+    <div class="btn-group dropdown" style="padding-bottom: 40px; padding-top: 35px;">
+      <button class="btn btn-primary" type="button">
+        Dashboard      </button>
+      <a href="promotion.html" class="btn btn-primary" type="button">
+        Promotion
+      </a>
+      <button class="btn btn-primary" type="button">
+        Manage
+      </button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bay Selection <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="active" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" >
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Time Selection <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="active" href="#">Current Date</a></li>
+          <li><a href="#">Week to Date</a></li>
+          <li><a href="#">Month to Date</a></li>
+          <li><a href="#">Year to Date</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--btngroup dropdown -->
+</div>
+
+
+<!-- SECTION washSites
+======================================================================== -->
+<section class="washSites">
+  <div class="container">
+    <h1 style="text-align: center">Gift Card Promotion</h1>
+    <table  class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Promotion</th>
+        <th scope="col">Status</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <th scope="row">Gift Cards</th>
+        <td>$50.00 + receive $5.00 bonus</td>
+        <td style="color:red">Inactive</td>
+        <td>3/7/2018</td>
+        <td>3/7/2018</td>
+      </tr>
+      <tr>
+        <th scope="row">Gift Cards</th>
+        <td>Frankie  Wash</td>
+        <td style="color:red">Inactive</td>
+        <td>3/7/2018</td>
+        <td>3/7/2018</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+
+
+
+
+
+
+
+</body>
+</html>
